@@ -26,6 +26,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MSDistributeDelegate {
           MSAnalytics.self,
           MSCrashes.self
         ])
+        #if DEBUG
+           MSAppCenter.start("5bf8ee42-bb8e-4bd1-9746-b1cdc68cf01a", withServices: [MSAnalytics.self, MSCrashes.self])
+        #else
+           MSAppCenter.start("5bf8ee42-bb8e-4bd1-9746-b1cdc68cf01a", withServices: [MSAnalytics.self, MSCrashes.self, MSDistribute.self])
+        #endif
         
         let alertController = UIAlertController(title: "Update available.",
                                               message: "Do you want to update?",
