@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         print("Vietnam")
         print("ZYZ")
         self.view.backgroundColor = .green
+        FTIndicator.showSuccess(withMessage: "Success", userInteractionEnable: true)
     }
 
 

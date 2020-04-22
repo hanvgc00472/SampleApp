@@ -6,6 +6,7 @@ target 'SampleApp' do
   use_frameworks!
 
   # Pods for SampleApp
+  pod 'FTIndicator', '~> 1.2.9'
 pod 'AppCenter/Distribute'
 pod 'AppCenter'
 end
