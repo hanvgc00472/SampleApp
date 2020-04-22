@@ -6,6 +6,6 @@ target 'SampleApp' do
   use_frameworks!
 
   # Pods for SampleApp
-
+pod 'AppCenter/Distribute'
 pod 'AppCenter'
 end
